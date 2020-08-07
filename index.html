@@ -4,25 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Anand Yadav-"Web Developer"</title>
 </head>
 <body>
+    <span id="top"></span>
+    <attr title="Move to TOP"><a href="#top"><div id="move-to-top">^</div></a></attr>
     <div id="wrapper1">
-        <nav>
-            <ul>
-                <a href="/"><li>HOME</li></a>
-                <a href="/"><li>ABOUT</li></a>
-                <a href="/"><li>SKILLS</li></a>
-                <a href="/"><li>PROJECT</li></a>
-                <a href="/"><li>CONTACT</li></a>
-            </ul>
-        </nav>
-        <div id="social-bar">
-            <ul>
-                <li><a href="https://github.com/anand-yadav55" target="_blank"><img src="github-logo.png" class="social" id="github-logo"></a></li>
-                <li><a href="https://www.linkedin.com/in/anand-yadav55/" target="_blank"><img src="linkedin.jpg" class="social" id="linkedin-logo"></a></li>
-                <li><a href="https://www.instagram.com/anandyadav_12/" target="_blank"><img src="insta-logo.png" class="social" id="insta-logo"></a></li>
-            </ul>
+        <div class="header">
+            <nav>
+                <ul>
+                    <a href="/"><li>HOME</li></a>
+                    <a href="#about"><li>ABOUT</li></a>
+                    <a href="#skills"><li>SKILLS</li></a>
+                    <a href="#projects"><li>PROJECTS</li></a>
+                    <a href="#contact"><li>CONTACT</li></a>
+                </ul>
+            </nav>
+            <div id="social-bar">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/anand-yadav55/" target="_blank"><abbr title="LinkedIn"><img src="linkedin.jpg" class="social" id="linkedin-logo"></abbr></a></li>
+                    <li><a href="https://github.com/anand-yadav55" target="_blank"><abbr title="GitHub"><img src="github-logo.png" class="social" id="github-logo"></abbr></a></li>
+                    <li><a href="https://www.facebook.com/anand55yadav/" target="_blank"><abbr title="Facebook"><img src="fb-logo.png" class="social" id="fb-logo"></abbr></a></li>
+                    <li><a href="https://www.instagram.com/anandyadav_12/" target="_blank"><abbr title="Intagram"><img src="insta-logo.png" class="social" id="insta-logo"></abbr></a></li>
+                </ul>
+            </div>
         </div>
         <div class="main-wrapper">
             <div id="wrapper3">
@@ -33,9 +39,63 @@
             </div>
             <div id="wrapper2">
                 <img src="photo.jpg" id="my-photo">
-                <button id="btn-hire-me">Get You website ready!</button>
+                <a href="https://forms.gle/f43TRc74ydLr6URTA" target="_blank"><button id="btn-hire-me">Get You website ready!</button></a>
             </div>
         </div>
     </div>
+    <div id="about">
+        <h1>ABOUT ME</h1>
+        <p>
+            Hey, I'm Anand Yadav, ongoing CS Undergrad. Living in Noida, India. Currently pursuing 2nd year of 
+            my Bachelor's Degree. I am a Full-Stack Web Developer. I love creating websites that comply ideas 
+            into real world. Websites are the most easily accessible service on any device and are easiest way 
+            to connect with the world. I am on the way of creating Progressive Web Apps (PWA). I have worked on 
+            serveral projects that are linked in <a link="#projects">Projects</a> section. Specilly I love to 
+            work on React (which is in learning process). I love making interactions on website and a huge fan of 
+            Micro-Interactions. I have handfull experience of connecting the front-end with the back-end. 
+        </p>
+    </div>
+    <div id="skills">
+        <h1>SKILLS</h1>
+        <div class="soft-skills">
+            <div class="bloc"></div>
+            <div class="bloc"></div>
+            <div class="bloc"></div>
+            <div class="bloc"></div>
+        </div>
+        <div class="tech-skills">
+            <div class="bloc"></div>
+            <div class="bloc"></div>
+            <div class="bloc"></div>
+            <div class="bloc"></div>
+        </div>
+    </div>
+    <div id="projects">
+        <h1>PROJECTS</h1>
+        <div class="bloc"></div>
+        <div class="bloc"></div>
+        <div class="bloc"></div>
+        <div class="bloc"></div>
+        <div class="bloc"></div>
+        <div class="bloc"></div>
+        <div class="bloc"></div>
+
+    </div>
+    <div id="contact">
+        <h1>CONTACT</h1>
+        <form method="POST">
+            <label for="name">Name<input type="text" name="name" placeholder="Enter your Name"></label><br>
+  
+            <label for="email">Email<input type="email" name="email" placeholder="example@example.com"></label>
+            
+            
+            <label for="message">Message<textarea name="message"></textarea></label>
+            <input type="submit">
+        </form>
+    </div>
+    <div id="footer">
+        <p>This website is designed and build by Anand Yadav. Thanks for Visiting. Your feedback will be valueable.</p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
